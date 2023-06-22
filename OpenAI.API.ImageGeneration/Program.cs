@@ -5,7 +5,7 @@ using OpenAI.Extensions;
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        services.AddOpenAIService(settings => settings.ApiKey = "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");
+        services.AddOpenAIService(settings => settings.ApiKey = ""MY_OPEN_AI_API_KEY"");
         services.AddHostedService<OpenAIImageService>();
 
     })
