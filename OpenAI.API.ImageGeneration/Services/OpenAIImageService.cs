@@ -24,7 +24,7 @@ namespace OpenAI.API.ImageGeneration.Services
         {
             while (true)
             {
-                Console.Write("::");
+                Console.Write("Define the image you want to create:");
                 ImageCreateResponse result = await _openAIService.Image.CreateImage(new ImageCreateRequest()
                 {
                     Prompt = Console.ReadLine(),
